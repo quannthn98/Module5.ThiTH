@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-header">
+    <h1>Create New Book</h1>
+  </div>
+  <div class="card-body">
+    <form [formGroup]="createForm" (ngSubmit)="submit()">
+      <table>
+        <tr>
+          <th>Title</th>
+          <td><input type="text" size="50" formControlName="title"></td>
+        </tr>
+        <tr>
+          <th>Author</th>
+          <td><input type="text" size="50" formControlName="author"></td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td><textarea formControlName="description" cols="48" rows="10"></textarea></td>
+        </tr>
+      </table>
+      <button class="btn btn-outline-primary mx-2">Submit</button>
+      <button class="btn btn-outline-secondary"><a class="link-dark" routerLink="">Cancel</a></button>
+    </form>
+  </div>
+  <div class="card-footer">
+
+  </div>
+</div>
+
